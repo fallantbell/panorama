@@ -52,7 +52,7 @@ Thus, we only reserver some better match into good match
 
 ## 5. Find the translation matrix  
 In this step, we need to find the translation matrix between the match points  
-Instead of using findhomography API, I write a little function with `RANSAC algorithm` to find that 
+Instead of using `findhomography API`, I write a little function with `RANSAC algorithm` to find that 
 ## 6. Fitting the tranlation matrix  
 I dont use `warpPerspective API` prevent from the distortion  
 Instead, I use `warpAffine API`  
@@ -92,7 +92,7 @@ So we need to remove them
 ### ocean  
 stitch 10 images (720\*960)  
 time: 869 ms  
-
+![image](https://github.com/fallantbell/panorama/blob/main/image/ocean.jpg)  
 
 ### pond  
 stitch 9 images (720\*960)  
