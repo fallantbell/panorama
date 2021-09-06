@@ -92,7 +92,7 @@ So we need to remove them
 ### ocean  
 stitch 10 images (720\*960)  
 time: 869 ms  
-
+![image](https://github.com/fallantbell/panorama/blob/main/image/ocean.jpg)  
 
 ### pond  
 stitch 9 images (720\*960)  
