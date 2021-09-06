@@ -83,6 +83,18 @@ After stitching the images, it remain some black region
 So we need to remove them  
 
 ### without crop
+<img src="https://github.com/fallantbell/panorama/blob/main/image/without_crop.png" width="800" height="400">  
 
 ### crop
+<img src="https://github.com/fallantbell/panorama/blob/main/image/crop.png" width="800" height="400">  
 
+## Result  
+### ocean  
+stitch 10 images (720\*960)  
+time: 869 ms  
+
+
+### pond  
+stitch 9 images (720\*960)  
+time: 1363 ms  
+![image](https://github.com/fallantbell/panorama/blob/main/image/panorama.jpg)  
