@@ -55,9 +55,10 @@ In this step, we need to find the translation matrix between the match points
 Instead of using findhomography API, I write a little function with `RANSAC algorithm` to find that 
 ## 6. Fitting the tranlation matrix  
 I dont use `warpPerspective API` prevent from the distortion  
-Instead, I `use warpAffine API`  
+Instead, I use `warpAffine API`  
 
-### After translate  
+### After translation  
+<img src="https://github.com/fallantbell/panorama/blob/main/image/translate.png" width="400" height="400">  
 
 ## 7. Stitch two image with blending  
 In this step, I check every pixels of two images  
@@ -71,5 +72,17 @@ In this step, I check every pixels of two images
 *both of two images are not black*  
 => if this pixel is closer to one image , set the higher weight to the image  
 
+### with blending  
+<img src="https://github.com/fallantbell/panorama/blob/main/image/blending.png" width="400" height="400">  
 
+### without blending  
+<img src="https://github.com/fallantbell/panorama/blob/main/image/without_blending.png" width="400" height="400">  
+
+## Crop the image  
+After stitching the images, it remain some black region  
+So we need to remove them  
+
+### without crop
+
+### crop
 
