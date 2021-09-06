@@ -6,6 +6,16 @@ There is some explanation below
 ## 1. Do the Cylindrical Projection  
 This is very important step to stitch image into panorama  
 If you dont do this, it will cause distortion when you stitch the image in one direction  
+
+I find the paper about this :  
+https://pdfs.semanticscholar.org/936b/0f1bf4dd6323ccf9d362efc15fef6c8119af.pdf
+
+I follow this code to do cylindrical projection :  
+https://stackoverflow.com/questions/12017790/warp-image-to-appear-in-cylindrical-projection?lq=1  
+
+
+
+
 ## 2. Find the keypoint and descriptor  
 There are many ways to do this, such as: SIFT, SURF, ORB ... [document](https://docs.opencv.org/4.5.2/db/d27/tutorial_py_table_of_contents_feature2d.html)  
 In my case, I use fast algorithm to find keypoint.  
