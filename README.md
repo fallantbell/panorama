@@ -54,7 +54,22 @@ Thus, we only reserver some better match into good match
 In this step, we need to find the translation matrix between the match points  
 Instead of using findhomography API, I write a little function with `RANSAC algorithm` to find that 
 ## 6. Fitting the tranlation matrix  
-I dont use warpPerspective API here prevent from the distortion  
-Instead, I use warpAffine API  
-## 7. Stitch two image  
+I dont use `warpPerspective API` prevent from the distortion  
+Instead, I `use warpAffine API`  
+
+### After translate  
+
+## 7. Stitch two image with blending  
+In this step, I check every pixels of two images  
+
+*both of two images are black*  
+=> set this pixel to black  
+
+*one of two images is black*  
+=> set this pixel to another  
+
+*both of two images are not black*  
+=> if this pixel is closer to one image , set the higher weight to the image  
+
+
 
