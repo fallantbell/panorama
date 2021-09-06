@@ -1,4 +1,5 @@
 # panorama
+![image](https://github.com/fallantbell/panorama/blob/main/image/panorama.png)  
 This is the panorama project in c++ with opencv  
 In this project, it only accept the sequential picture from left to right, or it will be wrong.  
 
@@ -13,7 +14,11 @@ https://pdfs.semanticscholar.org/936b/0f1bf4dd6323ccf9d362efc15fef6c8119af.pdf
 I follow this code to do cylindrical projection :  
 https://stackoverflow.com/questions/12017790/warp-image-to-appear-in-cylindrical-projection?lq=1  
 
+### image with cylindrical projection  
+<img src="https://github.com/fallantbell/panorama/blob/main/image/with_cylindrical.png" width="400" height="300">  
 
+### image without cylindrical projection
+<img src="https://github.com/fallantbell/panorama/blob/main/image/without_cylindrical.png" width="400" height="300">  
 
 
 ## 2. Find the keypoint and descriptor  
